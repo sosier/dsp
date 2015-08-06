@@ -16,7 +16,7 @@ These exercises are implemented with doctests, which are runnable tests inside d
 
 ---
 
-How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
+How are Python lists and tuples similar and different? Which will work as keys in dictionaries?  Why?
 
 REPLACE THIS TEXT WITH YOUR RESPONSE
 

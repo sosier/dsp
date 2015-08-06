@@ -44,7 +44,6 @@ You can check the version of Python installed on a computer by running the follo
 ```
 python --version
 ```
-
 ---
 
 
