@@ -10,9 +10,9 @@ these in a couple of hours.
 
 ---
 
-Make a cheat sheet for yourself: a list of commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
+Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+> > REPLACE THIS TEXT WITH YOUR RESPONSE
 
 ---
 
@@ -21,7 +21,7 @@ REPLACE THIS TEXT WITH YOUR RESPONSE
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+> > REPLACE THIS TEXT WITH YOUR RESPONSE
 
 ---
 
@@ -30,6 +30,7 @@ REPLACE THIS TEXT WITH YOUR RESPONSE
 
 What does `xargs` do? Give an example of how to use it.
 
-REPLACE THIS TEXT WITH YOUR RESPONSE
+> > REPLACE THIS TEXT WITH YOUR RESPONSE
 
 ---
+
