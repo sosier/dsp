@@ -44,7 +44,7 @@ Create the following folders:
 
 Example: /Users/laumontemayor/ds/metis  
 
-(Windows): `C:/ds/metis`
+(Windows): `C:/ds/metis/prework`
 
 Navigate in your terminal to the folder you just created. Type `git clone` and then paste the clone URL.  
 
@@ -52,7 +52,7 @@ Navigate in your terminal to the folder you just created. Type `git clone` and t
 
 Cloning the directory will create the following:
 
-`/Users/yourname/ds/metis/dsp`
+`/Users/yourname/ds/metis/prework/dsp`
 
 And now `cd` into the `/dsp` folder. Your terminal window should now show show something like this:
 

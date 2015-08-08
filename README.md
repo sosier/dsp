@@ -40,5 +40,5 @@ If you want to spend time learning how to configure things, I recommend learning
 **Q:  Can I discuss prework with other students in the course?**  
 A:   Absolutely.
 
-**Q:  Can I ask for hints for python and stats questions?**  
-A:  The preference is to post your questions and requests for hints on Slack.  However, if you feel more comfortable, you can also email the teaching assistant.
+**Q:  Can I ask for hints for python questions?**  
+A:  Yes
