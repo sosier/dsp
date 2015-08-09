@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I wil use vim. As mentioned above, it is the default on many systems so it makes sense to be generally proficient with it.
 
 ---
 
@@ -61,6 +61,16 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I will use Atom. I selected it after reviewing the websites for the all options suggested above. It has a number of strengths which ultimately led me to choose it:
+
+>>1. Nice user interface (they had the best website as well)
+2. Developed by GitHub so integrates nicely with it
+3. Open source (in Javascript), so it is always underdevelopment and is infinitely customizable
+4. Autocompletion
+5. Packages library
+
+>>One useful keyboard shortcut I've used thus far is Alt+Backspace which deletes back one word at a time instead of one character at a time. Command+Backspace deletes the entire line and is also very useful.
+
+>>Atom can be customized using its detailed preferences section or by editting its config, init script, keybindings, etc. files.
 
 ---
