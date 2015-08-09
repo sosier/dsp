@@ -43,6 +43,7 @@ Did you install Python 2 or 3? Why? How can you check the version of Python inst
 ```
 python --version
 ```
+
 ---
 
 
