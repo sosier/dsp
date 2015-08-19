@@ -30,7 +30,12 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > **xargs** - when used in combination with `$ | $`, executes arguments that `$ | $` would not be able to do alone  
+  - *Hint: `xargs` alone opens a prompt for you to enter text, which it then `echo`es; in this way, `xargs` can be used to customize how results are output*  
+  - *For example: `ls | xargs -n 1` lists the contents of your current directory with one item on each line instead of a big, hard to read mass of files, folders, etc.*  
+  - *Another common use of `xargs` is in conjunction with `find`*  
+  - _For example: `find . -name "*.txt" -print | xargs rm` would perform a search for all .txt files and remove them in one command_  
+  - _Note: `find . -name "*.txt" -print | rm` would fail_  
 
 ---
 
