@@ -69,7 +69,11 @@ What graphical editor will you use? How did you make your decision? What are som
 4. Autocompletion
 5. Packages library
 
->>One useful keyboard shortcut I've used thus far is Alt+Backspace which deletes back one word at a time instead of one character at a time. Command+Backspace deletes the entire line and is also very useful.
+>>Particularly useful / interesting keyboard shortcuts include:  
+
+>>1. `Alt + Backspace` - deletes back one word at a time instead of one character at a time  
+2. `Command + Backspace` - deletes the entire line  
+3. `Control + Command + G` - selects all instances of the text you have selected (great for use with find & replace or simply just quickly locating all instances of that text)
 
 >>Atom can be customized using its detailed preferences section or by editting its config, init script, keybindings, etc. files.
 
