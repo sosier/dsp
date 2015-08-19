@@ -21,7 +21,12 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > **ls [name]** - lists contents of [name] directory; if no directory specified, uses current location  
+  - *Hint: `ls -lR` recursively lists all contents, sub-contents, etc.*  
+  - *Hint: `ls -a` all contents including hidden files*    
+  - *Hint: `ls -l` lists all contents with greater detail (in addition to name also shows file size, modified date, owner / group, permissions, etc.)*  
+  - *Hint: `ls -lh` does the same thing but shows the file sizes in a more human friendly way*  
+  - *Note: all combinations of the above flags are meaningful*  
 
 ---
 
