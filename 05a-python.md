@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> Both lists and tuples are sequences of items, but lists are mutable, while tuples are immutable (meaning items in lists can be changed or extended whereas item in a tuple can't, e.g. ```aList[0]=1``` is legeal whereas ```aTuple[0]=1``` is *__NOT__* legal).
+>> Both lists and tuples are sequences of items, but lists are mutable, while tuples are immutable (meaning items in lists can be changed or extended whereas item in a tuple can't, e.g. `aList[0]=1` is legeal whereas `aTuple[0]=1` is *__NOT__* legal).
 
 >>Since dictionaries require immutable keys, a tuple can be a key, but a list can't.
 
@@ -37,7 +37,14 @@ aSet = set(aList)
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> `lambda` is essentially a shorter way of writing a function for one-time use. It is commonly used in functional programming with functions that accept function(s) as arguments. These commonly include: `map`, `filter`, `reduce`, and `sorted`.
+
+>>For example, used with `sorted` `lambda` provides an easier way to sort complex objects:
+```
+listOfTuples = [("Apple", "Red", 1.23), ("Banana", "Yellow", 0.90), ("Cantaloupe", "Tan", 5.00)]
+listOfTuples = sorted(listOfTuples, key=lambda fruit: fruit[2]) #Sort by price
+#Returns [("Banana", "Yellow", 0.90), ("Apple", "Red", 1.23), ("Cantaloupe", "Tan", 5.00)]
+```
 
 ---
 
