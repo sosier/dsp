@@ -18,7 +18,10 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count >= 10:
+        return "Number of donuts: many"
+    else:
+        return "Number of donuts: %s" % (str(count))
 
 
 def both_ends(s):
@@ -37,7 +40,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) < 2:
+        return ""
+    else:
+        return s[:2] + s[-2:]
 
 
 def fix_start(s):
@@ -56,7 +62,17 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    newStr = ""
+    firstChar = s[0]
+    newStr += firstChar
+
+    for i in range(1, len(s)):
+        if s[i] == firstChar:
+            newStr += "*"
+        else:
+            newStr += s[i]
+
+    return newStr
 
 
 def mix_up(a, b):
@@ -74,7 +90,7 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    return b[:2] + a[2:] + " " + a[:2] + b[2:]
 
 
 def verbing(s):
@@ -91,7 +107,12 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s) < 3:
+        return s
+    elif s[-3:] != "ing":
+        return s + "ing"
+    else:
+        return s + "ly"
 
 
 def not_bad(s):
@@ -111,7 +132,15 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    notLocation = s.find("not")
+    badLocation = s.find("bad")
+
+    if notLocation == -1 or badLocation == -1:
+        return s
+    elif badLocation < notLocation:
+        return s
+    else:
+        return s[:notLocation] + "good" + s[badLocation+3:]
 
 
 def front_back(a, b):
@@ -130,4 +159,14 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    if len(a) % 2 == 0:
+        aHalf = len(a)//2
+    else:
+        aHalf = len(a)//2 + 1
+
+    if len(b) % 2 == 0:
+        bHalf = len(b)//2
+    else:
+        bHalf = len(b)//2 + 1
+
+    return a[:aHalf] + b[:bHalf] + a[aHalf:] + b[bHalf:]
