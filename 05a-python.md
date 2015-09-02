@@ -12,7 +12,9 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Both lists and tuples are sequences of items, but lists are mutable, while tuples are immutable (meaning items in lists can be changed or extended whereas item in a tuple can't, e.g. `aList[0]=1` is legeal whereas `aTuple[0]=1` is *__NOT__* legal).
+
+>>Since dictionaries require immutable keys, a tuple can be a key, but a list can't.
 
 ---
 
@@ -20,7 +22,14 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Both lists and set are mutable sequences of items, however sets are unique, unordered sequences of items whereas lists can have duplicates and be sorted. For example:
+```
+aList = [0,0,1,2,3,3,4,5,"a","a","b","b"]
+aSet = set(aList)
+#aSet returns {0,1,2,3,4,5,"a","b"} (though not necessarily in that order)
+```
+
+>>The items in a set are required to be hashable, which makes it quicker to find elements in a set than a list.
 
 ---
 
@@ -28,7 +37,14 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> `lambda` is essentially a shorter way of writing a function for one-time use. It is commonly used in functional programming with functions that accept function(s) as arguments. These commonly include: `map`, `filter`, `reduce`, and `sorted`.
+
+>>For example, used with `sorted` `lambda` provides an easier way to sort complex objects:
+```
+listOfTuples = [("Apple", "Red", 1.23), ("Banana", "Yellow", 0.90), ("Cantaloupe", "Tan", 5.00)]
+listOfTuples = sorted(listOfTuples, key=lambda fruit: fruit[2]) #Sort by price
+#Returns [("Banana", "Yellow", 0.90), ("Apple", "Red", 1.23), ("Cantaloupe", "Tan", 5.00)]
+```
 
 ---
 
