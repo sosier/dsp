@@ -52,7 +52,18 @@ listOfTuples = sorted(listOfTuples, key=lambda fruit: fruit[2]) #Sort by price
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions are a shorter, more human readable way to create lists, especially those based on another list or iteratable sequence. They let you do a lot of the same things as `lambda` (see above) in a more human friendly way. For example:
+
+>>| List comprehension | `lambda` | Both return |
+| --- | --- | --- |
+| `[x**2 for x in range(4)]` | `map(lambda x: x**2, range(4))` | [0, 1, 4, 9] |
+| `[x for x in range(9) if x%2 == 0]` | `filter(lambda x: x%2 == 0, range(9))` | [0, 2, 4, 6, 8] |
+
+>> In general, comprehensions and `lambda` are quite similar and most everything you can do with one you can do with the other. The general consensus on the internet seems to be that comprehensions are preferred in most cases because they are more reader friendly and may confer a very slight speed advantage.
+
+>> You can also do comprehensions for sets and dictionaries. For example:
+- **Set:** `{x**2 for x in range(4)}` returns {0, 1, 4, 9} (not necessarily in that order)
+- **Dictionary:** `{x: x**2 for x in range(4)}` returns {0: 0, 1: 1, 2: 4, 3: 9} (not necessarily in that order)
 
 ---
 
