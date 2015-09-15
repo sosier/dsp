@@ -57,7 +57,9 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ###Q8. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Frequentist statistics is about estimating features of a population by use a of a random sample of members of that population.  Probabilities in frequentist statistics reference the probability of seeing some results in a distribution of random samples, NOT the probability of any given result itself. For example, a 90% confidence intreval for a mean of say 1 to 2 tells us that we would expect the mean for 90% of samples to fall in this range, NOT that there is a 90% chance that the population mean is in this range.
+
+>>Bayesian statistics by contrast is explicity about probabilities, specifically conditional probabilities: i.e. given some prior beliefs (probabilities) what should these beliefs (probabilities) be in light of some data. With Bayesian statistics we can say given XYZ data, this is the distribuiton of possible results, and here are the probabilities of each. 
 
 ---
 
